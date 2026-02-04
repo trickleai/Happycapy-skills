@@ -1,59 +1,30 @@
 # Happycapy Skills
 
-A curated collection of high-quality Claude Code skills to enhance your development workflow.
+A curated collection of high-quality Claude Code skills to enhance your development workflow. Skills are organized by category for easy discovery.
 
-## Available Skills
+## 📚 Browse by Category
 
-### 1. Reddit Post Writer
+### 🎨 Content Creation
+Skills for creating engaging content across different platforms.
 
-A Claude Code skill for generating authentic Reddit posts that sound human, avoid AI detection, and spark engagement across 25+ subreddits.
+- **[Reddit Post Writer](content-creation/reddit-post-writer/)** - Generate authentic Reddit posts that sound human, avoid AI detection, and spark engagement across 25+ subreddits. Includes 7-persona committee review system and subreddit-specific guidelines. ([Original](https://github.com/niveshdandyan/reddit-post-skill))
 
-**Features:**
-- Generate authentic Reddit posts that match subreddit culture
-- 7-persona committee review system for quality assurance
-- Configurable tool/product mentions with subtlety levels (1-10)
-- **25+ subreddit-specific guidelines** covering:
-  - Career & Jobs: r/jobs, r/RemoteWork, r/careerguidance, r/antiwork, r/workfromhome
-  - AI & Tech: r/claude, r/AgentsOfAI, r/claudecode, r/claudeexplorers, r/aiagents, r/AI_Application, r/AIAgentsInAction, r/AiForSmallBusiness
-  - Entrepreneurship: r/Entrepreneur, r/indiehackers, r/founder, r/EntrepreneurRideAlong, r/GrowMyBusiness
-  - Productivity: r/Productivity, r/ProductivityApps, r/ProductivityCafe, r/nocode, r/automation
-  - Lifestyle: r/digitalnomad, r/InternetIsBeautiful
-- Posting strategy recommendations including timing and engagement predictions
+### 📊 Presentation
+Skills for creating stunning presentations and visual content.
 
-**Usage:**
-```
-/reddit-post-writer
-```
+- **[Frontend Slides](presentation/frontend-slides/)** - Create animation-rich HTML presentations from scratch or convert PowerPoint files. Zero dependencies, 12 distinctive design presets, responsive and viewport-fitted. ([Original](https://github.com/zarazhangrui/frontend-slides))
 
-**Original Source:** [niveshdandyan/reddit-post-skill](https://github.com/niveshdandyan/reddit-post-skill)
+### 💻 Development
+_Coming soon - Skills for code generation, debugging, and development workflows._
 
----
+### ⚡ Productivity
+_Coming soon - Skills for automation, task management, and efficiency._
 
-### 2. Frontend Slides
+### 📈 Data Analysis
+_Coming soon - Skills for data processing, visualization, and insights._
 
-Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files. Zero dependencies - single HTML files that run entirely in the browser.
-
-**Features:**
-- Create animation-rich HTML presentations with zero dependencies
-- Convert PowerPoint files to beautiful web presentations
-- Visual style exploration - see options before choosing
-- 12 distinctive design presets (Bold Signal, Dark Botanical, Neon Cyber, etc.)
-- Responsive and viewport-fitted (no scrolling within slides)
-- Production-quality code with accessibility support
-- Interactive effects: 3D tilt, custom cursors, particle systems
-
-**Best For:**
-- Pitch decks for startups
-- Conference talks and keynotes
-- Teaching and tutorials
-- Internal presentations
-
-**Usage:**
-```
-/frontend-slides
-```
-
-**Original Source:** [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides)
+### 🎨 Design
+_Coming soon - Skills for UI/UX design, graphics, and visual assets._
 
 ---
 
@@ -61,20 +32,39 @@ Create stunning, animation-rich HTML presentations from scratch or by converting
 
 ### For Claude Code Users
 
-Clone this repository to access all curated skills:
+Clone this repository and install individual skills:
 
 ```bash
 # Clone the repository
 git clone https://github.com/trickleai/Happycapy-skills.git
+cd Happycapy-skills
 
-# Copy individual skills to your Claude Code skills directory
+# Install a specific skill (example: Reddit Post Writer)
 mkdir -p ~/.claude/skills
-cp -r Happycapy-skills/reddit-post-writer ~/.claude/skills/
+cp -r content-creation/reddit-post-writer ~/.claude/skills/
+
+# Or install Frontend Slides
+cp -r presentation/frontend-slides ~/.claude/skills/
+
+# Or install all skills from a category
+cp -r content-creation/* ~/.claude/skills/
 ```
 
-### Directory Structure
+### Repository Structure
 
-Each skill in this collection follows the standard Claude Code skill structure with its own SKILL.md and reference materials.
+```
+Happycapy-skills/
+├── content-creation/       # Content creation skills
+│   └── reddit-post-writer/
+├── presentation/          # Presentation skills
+│   └── frontend-slides/
+├── development/           # Development tools (coming soon)
+├── productivity/          # Productivity tools (coming soon)
+├── data-analysis/         # Data analysis (coming soon)
+└── design/               # Design tools (coming soon)
+```
+
+Each skill follows the standard Claude Code skill structure with its own SKILL.md and reference materials.
 
 ---
 
